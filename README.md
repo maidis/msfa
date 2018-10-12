@@ -2,7 +2,7 @@
 
 msfa loosely base on Nettention's [ChangeIncludeHeaderBackslashToSlash](https://github.com/Nettention/ChangeIncludeHeaderBackslashToSlash) and [this Perl one-liner](https://stackoverflow.com/questions/573430/include-header-path-change-from-windows-to-linux):
 
-```perl
+```bash
 perl -i.bak -pe 'tr!\\!/! if /^\s*#\s*include\b/' *.cpp
 ```
 
