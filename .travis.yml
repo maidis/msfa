@@ -1,7 +1,6 @@
 language: cpp
-compiler:
-  - g++
-  - clang++
+compiler: g++
+
 dist: trusty
 sudo: require
 
@@ -10,8 +9,8 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - gcc-6
-      - g++-6
+      - gcc-8
+      - g++-8
       - cmake
 
 branches:
