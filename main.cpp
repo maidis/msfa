@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
 
       std::string includeLine = "#include";
 
-      for (auto sourceFile : sourceFiles) {
+      for (auto const& sourceFile : sourceFiles) {
         // if an individual file fail just go to the next file
         try {
 
