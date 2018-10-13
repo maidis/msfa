@@ -1,5 +1,7 @@
 language: cpp
-compiler: gcc
+compiler:
+  - g++
+  - clang++
 dist: trusty
 sudo: require
 
@@ -12,11 +14,13 @@ addons:
       - g++-6
       - cmake
 
-script:
-    - sudo ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
-    - sudo ln -s /usr/bin/g++-6 /usr/local/bin/g++
-    - gcc -v && g++ -v && cmake --version
-    - mkdir build
-    - cmake ..
-    - make
-    - ./msfa
+branches:
+  only:
+    - master
+
+before_script:
+  - mkdir build
+  - cd build
+  - cmake ..
+
+script: make
