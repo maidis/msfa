@@ -1,4 +1,4 @@
-# msfa
+# msfa [![Build Status](https://travis-ci.com/maidis/msfa.svg?branch=master)](https://travis-ci.com/maidis/msfa)
 
 msfa loosely base on Nettention's [ChangeIncludeHeaderBackslashToSlash](https://github.com/Nettention/ChangeIncludeHeaderBackslashToSlash) and [this Perl one-liner](https://stackoverflow.com/questions/573430/include-header-path-change-from-windows-to-linux):
 
